@@ -1,0 +1,79 @@
+/* custom-theme.css */
+
+/* Table Headers */
+.p-datatable .p-datatable-thead > tr > th {
+    background-color: #16324F; /* Slightly different from the navbar color */
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Zebra Striping for Rows */
+.p-datatable-tbody > tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.p-datatable-tbody > tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover Effect */
+.p-datatable-tbody > tr:hover {
+    background-color: #e2e2e2 !important; /* Use a color that provides a good hover effect */
+}
+
+/* Cell Padding */
+.p-datatable .p-datatable-tbody > tr > td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #e0e0e0; /* Add a border or shadow for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .p-datatable .p-datatable-tbody > tr > td {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Loading State */
+.p-datatable.p-datatable-loading .p-datatable-tbody {
+    opacity: 0.5; /* Dim the table when loading */
+}
+
+/* Empty State */
+.p-datatable-emptymessage {
+    padding: 20px;
+    text-align: center;
+    background: #fafafa;
+    border: 1px dashed #d0d0d0;
+    color: #555555;
+}
+
+
+
+.table-header .p-input-icon-left .p-inputtext {
+    width: 100%; /* Full width of its parent */
+    max-width: 300px; /* Maximum width it can stretch to */
+    padding: 8px 10px; /* Comfortable padding inside the search bar */
+    font-size: 1rem; /* Readable font size */
+    border: 1px solid #ced4da; /* Subtle border color */
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transitions for hover and focus */
+}
+
+.table-header .p-input-icon-left .pi-search {
+    margin-right: 0.5em; /* Space between icon and input */
+}
+
+.table-header .p-input-icon-left .p-inputtext::placeholder {
+    color: #adb5bd; /* Styling placeholder text */
+}
+
+.table-header .p-input-icon-left .p-inputtext:hover,
+.table-header .p-input-icon-left .p-inputtext:focus {
+    border-color: #80bdff; /* Border color on hover and focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Box shadow on hover and focus */
+    outline: 0; /* Remove the default outline */
+}
+
+
